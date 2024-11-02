@@ -1,0 +1,12 @@
+
+Prediction of File ./audio_files/LA_E_5558439.flac is:> spoofed with cofidence score of 0.9998362064361572
+Prediction of File ./audio_files/LA_E_7805499.flac is:> spoofed with cofidence score of 1.0
+Prediction of File ./audio_files/LA_E_5558298.flac is:> spoofed with cofidence score of 0.9994507431983948
+Prediction of File ./audio_files/LA_E_3270284.flac is:> bonafide with cofidence score of 0.9958969354629517
+Prediction of File ./audio_files/LA_E_3273150.flac is:> spoofed with cofidence score of 1.0
+Prediction of File ./audio_files/LA_E_3273384.flac is:> spoofed with cofidence score of 0.9999998807907104
+Prediction of File ./audio_files/LA_E_A9529647.flac is:> bonafide with cofidence score of 0.9999983310699463
+Prediction of File ./audio_files/LA_E_5000725.flac is:> bonafide with cofidence score of 0.9999969005584717
+Prediction of File ./audio_files/LA_E_7803558.flac is:> spoofed with cofidence score of 0.9999997615814209
+Prediction of File ./audio_files/LA_E_A9884360.flac is:> bonafide with cofidence score of 0.9999880790710449
+Prediction of File ./audio_files/LA_E_3272678.flac is:> spoofed with cofidence score of 0.9660369753837585
