@@ -16,7 +16,7 @@ The spoofed speech detection is done via the audio anti-spoofing systems propose
 
 Along with Docker, NVIDIA Container Toolkit needs to be installed for enabling the access of cuda in you machine with the container. The steps to install the same can be found here:> [Link](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 
-### Generating spoofed speech
+### I. Generating spoofed speech
 
 The details steps to generate English and Hindi speech can be found here (Note: Having cuda enbale machine is highly appreciated):
   1. [Hindi Text-to-Speech Inference with Docker](https://github.com/Shiven-Patel-IIT/MahaTTS-Hindi-inference-using-docker)
@@ -26,7 +26,7 @@ Both the repository are using [MahaTTS](https://github.com/dubverse-ai/MahaTTS/)
 
 [Shiven Patel](https://github.com/Shiven-Patel-IIT) has created these GitHub repositories to help containerized using Docker to handle all dependencies seamlessly.
 
-### Detecting spoofed speech using AASIST
+### II. Detecting spoofed speech using AASIST
 
 The steps to run the spoofed speech detecting algorithm ([AASIST](https://arxiv.org/abs/2110.01200)):
   1. First, clone the repository locally
@@ -36,7 +36,7 @@ git clone https://github.com/shilpac131/AnalysisOfSpeechDeepfakes
 cd AnalysisOfSpeechDeepfakes
 ```
 
-**⚠️ Note:** Your audio file/files(s) (to be classified as fake or real) should be present in the AnalysisOfSpeechDeepfakes/audio_files/ directory before running the steps below.
+**⚠️ Note:** Your audio file/files(s) (to be classified as fake or real) should be present in the AnalysisOfSpeechDeepfakes/audio_files/ directory before running the steps below as the docker doesn't recongnize paths from system so before buliding the docker copy the audio files.
 
   2. Build the Docker Image
   A Dockerfile defines the instructions to build a Docker image with all dependencies and configurations for an application. To build the docker image run
