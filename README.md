@@ -18,7 +18,7 @@ Along with Docker, NVIDIA Container Toolkit needs to be installed for enabling t
 
 ### I. Generating spoofed speech
 
-The details steps to generate English and Hindi speech can be found here (Note: Having cuda enbale machine is highly appreciated):
+The details steps to generate English and Hindi speech can be found here (Note: Having cuda enabled machine is highly appreciated):
   1. [Hindi Text-to-Speech Inference with Docker](https://github.com/Shiven-Patel-IIT/MahaTTS-Hindi-inference-using-docker)
   2. [English Text-to-Speech Inference with Docker](https://github.com/Shiven-Patel-IIT/Maha-TTS-inference-using-docker)
 
@@ -50,7 +50,7 @@ git build -t <image_name> .
 ```bash
 docker run --gpus all -it -v ./mydockerdata:/app/data <image_name>
 ```
-    The output scores will be available in the ./mydockerdata/output.txt file.
+  The output scores will be available in the ./mydockerdata/output.txt file.
 
   
 
