@@ -42,7 +42,7 @@ cd AnalysisOfSpeechDeepfakes
   A Dockerfile defines the instructions to build a Docker image with all dependencies and configurations for an application. To build the docker image run
 
   ```bash
-git build -t <image_name> .
+docker build -t <image_name> .
 ```
 
   3. Run the following commnd to run the detection algorithm. It will prompt user with 2 options, to detect spoofed speech via single audio or via a folder conatining multiple audio. Choose accordingly. And give the path to the AnalysisOfSpeechDeepfakes/audio_files/ when prompted with the path to audio file/file(s)
