@@ -34,6 +34,7 @@ from data_utils import (Dataset_ASVspoof2019_train,
 from evaluation import calculate_tDCF_EER
 from utils import create_optimizer, seed_worker, set_seed, str_to_bool
 import soundfile as sf
+import librosa
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
@@ -126,10 +127,14 @@ def main(args: argparse.Namespace) -> None:
 
             ## FOR DOCKER:
             output_file = '/app/data/output.txt'
+            # output_file = '/home/shilpa/shilpa/aasist_original/exp_result/output.txt'
             with open(output_file, "a") as file:
                 for audio_file in audio_files:
-                    X,fs = sf.read(audio_file) 
-                    X_pad= pad(X,64600)
+                    # X,fs = sf.read(audio_file) 
+                    ## to resample any audio file to 16k as AASIST takes 16k raw audio input
+                    y, sr = librosa.load(audio_file, sr=None)
+                    y_16k = librosa.resample(y, orig_sr=sr, target_sr=16000)
+                    X_pad= pad(y_16k,64600)
                     x_inp= Tensor(X_pad)
                     x_inp = x_inp.view(1, -1)
                     x_inp = x_inp.to(device)
